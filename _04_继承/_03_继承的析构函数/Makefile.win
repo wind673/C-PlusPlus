@@ -1,0 +1,36 @@
+# Project: Project
+# Makefile created by Dev-C++ 5.4.0
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Project_private.res
+OBJ      = USER/main.o USER/fun.o $(RES)
+LINKOBJ  = USER/main.o USER/fun.o $(RES)
+LIBS     = -L"F:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc
+INCS     = -I"F:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+CXXINCS  = -I"F:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+BIN      = Project.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+USER/main.o: USER/main.cpp
+	$(CPP) -c USER/main.cpp -o USER/main.o $(CXXFLAGS)
+
+USER/fun.o: USER/fun.cpp
+	$(CPP) -c USER/fun.cpp -o USER/fun.o $(CXXFLAGS)
+
+Project_private.res: Project_private.rc 
+	$(WINDRES) -i Project_private.rc --input-format=rc -o Project_private.res -O coff 

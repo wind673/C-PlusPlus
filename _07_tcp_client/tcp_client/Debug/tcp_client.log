@@ -1,0 +1,15 @@
+﻿生成启动时间为 2017/6/22 星期四 16:48:50。
+     1>项目“E:\_04_生活\0_学习\C++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\tcp_client\tcp_client.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt tcp_client.cpp
+         tcp_client.cpp
+     1>e:\_04_生活\0_学习\c++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\tcp_client\tcp_client.cpp(27): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(261) : 参见“gets”的声明
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\_04_生活\0_学习\C++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\Debug\tcp_client.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\_04_生活\0_学习\C++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\Debug\tcp_client.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\_04_生活\0_学习\C++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\Debug\tcp_client.lib" /MACHINE:X86 Debug\tcp_client.obj
+         tcp_client.vcxproj -> E:\_04_生活\0_学习\C++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\Debug\tcp_client.exe
+     1>已完成生成项目“E:\_04_生活\0_学习\C++\_01_自学内容\_01_程序\_01_网络编程\tcp_client\tcp_client\tcp_client.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.05
